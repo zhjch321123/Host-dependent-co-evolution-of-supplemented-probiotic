@@ -1,0 +1,26 @@
+Python
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy import interpolate
+x =np.array([0, 3, 7, 14, 21, 28])
+y =np.array([0, 0, 0, 6.25, 11.11, 57.5])
+xnew =np.arange(0,28,0.1)
+func = interpolate.interp1d(x,y,kind='cubic')
+ynew = func(xnew)
+plt.plot(x, y, "r", linewidth=1)
+plt.plot(xnew,ynew)
+plt.xlabel("The distance between POI  and user(km)")
+plt.ylabel("probability")
+plt.title("The content similarity of different distance")
+plt.xlim(0,28,5)
+plt.ylim(0,100)
+f = open("f.txt", 'w+')
+print(ynew, file=f)
+plt.show()
+R
+library("ggmuller", lib.loc="~/R/win-library/3.5")
+pop4<-read.table("FIG_3CD.txt",header=TRUE,sep="\t",row.names=1)
+edge4<-read.table("AA.txt",header=TRUE,sep="\t",row.names=1)
+Muller_df4 <- get_Muller_df(edge4, pop4)
+Muller_plot(Muller_df4, add_legend = TRUE, xlab = "Time", ylab = "Fresequence")
+Muller_pop_plot(Muller_df4, add_legend = TRUE, xlab = "Time", ylab = "Fresequence")
