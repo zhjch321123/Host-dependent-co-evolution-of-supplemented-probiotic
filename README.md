@@ -1,2 +1,3 @@
 # Host-dependent-co-evolution-of-supplemented-probiotic
 The host-dependent co-evolution of supplemented probiotic and the indigenous gut microbiota
+Systematic evaluation of the genetic stability and safety of probiotics in the gastrointestinal tract is crucial yet underexplored and challenging. In this study, we used Lactobacillus plantarum HNU082 as a model probiotic strain to explore the effects of host-derived selection pressure (including human, mouse, and zebrafish) on the genetic stability of probiotics and its ecological and evolutionary impact on the indigeneous gut microbiota of different hosts using shotgun metagenomic sequencing and isolate resequencing methods.
