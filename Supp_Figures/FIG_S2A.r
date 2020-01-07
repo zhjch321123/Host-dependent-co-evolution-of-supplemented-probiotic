@@ -1,0 +1,10 @@
+library(pheatmap)
+all<-read.table("123.txt",header=TRUE,sep="\t",row.names=1)
+colgroup=read.table("colgroup.txt",header=TRUE,sep="\t",row.names=1)
+#rowgroup=read.table("rowgroup.txt",header=TRUE,sep="\t",row.names=1)
+#colnames(colgroup)=c("Model","Time")
+colnames(colgroup)=c("Time")
+#colnames(rowgroup)=c("Location","Source","Function")
+#pheatmap(all,annotation_col = colgroup,cellwidth=6,cluster_col = FALSE,cellheight=6,fontsize_row=6,fontsize_col=6,color = colorRampPalette(c("black", "white", "darkorchid4"))(10), gaps_col = c(77, 84), cutree_row=3, filename="cc777.pdf")
+pheatmap(all,annotation_col = colgroup,cellwidth=6,cluster_col = FALSE,cellheight=6,fontsize_row=6,fontsize_col=6,color = colorRampPalette(c("black", "white", "darkorchid4"))(10), filename="cc.pdf")
+
