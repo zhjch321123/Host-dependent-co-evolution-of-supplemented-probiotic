@@ -1,0 +1,151 @@
+DATASET_COLORSTRIP
+#lines starting with a hash are comments and ignored during parsing
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throught this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+SEPARATOR SPACE
+#SEPARATOR COMMA
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL color_strip1
+
+#dataset color (can be changed later)
+COLOR #ff0000
+
+#optional settings
+
+#all other optional settings can be set or changed later in the web interface (under 'Datasets' tab)
+COLOR_BRANCHES 1
+#maximum width
+STRIP_WIDTH 80
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+MARGIN 0
+
+#border width; if set above 0, a black border of specified width (in pixels) will be drawn around the color strip 
+BORDER_WIDTH 0
+BORDER_COLOR #000
+
+#show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+SHOW_INTERNAL 0
+
+#In colored strip charts, each ID is associated to a color. Color can be specified in hexadecimal, RGB or RGBA notation
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#Actual data follows after the "DATA" keyword
+DATA
+#ID1 value1
+#ID2 value2
+Ref_HNU082 #458B74 COL#458B74
+D14_Vitro #c0b4e2 COL#c0b4e2
+D21_Vitro #c0b4e2 COL#c0b4e2
+D28_Vitro #c0b4e2 COL#c0b4e2
+D7_Vitro #c0b4e2 COL#c0b4e2
+1H11B #fbfb74 COL#fbfb74
+1H12C #fbfb74 COL#fbfb74
+1H13C #fbfb74 COL#fbfb74
+1H15C #fbfb74 COL#fbfb74
+1H18D #fbfb74 COL#fbfb74
+1H1A #fbfb74 COL#fbfb74
+1H20D #fbfb74 COL#fbfb74
+1H25E #fbfb74 COL#fbfb74
+1H27E #fbfb74 COL#fbfb74
+1H28E #fbfb74 COL#fbfb74
+1H29E #fbfb74 COL#fbfb74
+1H3A #fbfb74 COL#fbfb74
+1H6B #fbfb74 COL#fbfb74
+1H8B #fbfb74 COL#fbfb74
+1H9B #fbfb74 COL#fbfb74
+2H31A #fbfb74 COL#fbfb74
+2H33A #fbfb74 COL#fbfb74
+2H44B #fbfb74 COL#fbfb74
+2H45B #fbfb74 COL#fbfb74
+2H47B #fbfb74 COL#fbfb74
+2H50C #fbfb74 COL#fbfb74
+2H51C #fbfb74 COL#fbfb74
+2H52C #fbfb74 COL#fbfb74
+3H63A #fbfb74 COL#fbfb74
+3H66A #fbfb74 COL#fbfb74
+3H67A #fbfb74 COL#fbfb74
+3H68A #fbfb74 COL#fbfb74
+3H69C #fbfb74 COL#fbfb74
+3H72C #fbfb74 COL#fbfb74
+3H73D #fbfb74 COL#fbfb74
+3H79D #fbfb74 COL#fbfb74
+3H84E #fbfb74 COL#fbfb74
+3H85E #fbfb74 COL#fbfb74
+4H100D #fbfb74 COL#fbfb74
+4H101D #fbfb74 COL#fbfb74
+4H102D #fbfb74 COL#fbfb74
+4H103D #fbfb74 COL#fbfb74
+4H105E #fbfb74 COL#fbfb74
+4H93B #fbfb74 COL#fbfb74
+4H96B #fbfb74 COL#fbfb74
+4H97C #fbfb74 COL#fbfb74
+5H113B #fbfb74 COL#fbfb74
+5H115B #fbfb74 COL#fbfb74
+5H117C #fbfb74 COL#fbfb74
+5H119C #fbfb74 COL#fbfb74
+5H124D #fbfb74 COL#fbfb74
+5H125D #fbfb74 COL#fbfb74
+5H128D #fbfb74 COL#fbfb74
+5H131D #fbfb74 COL#fbfb74
+5H132E #fbfb74 COL#fbfb74
+5H133E #fbfb74 COL#fbfb74
+5H135E #fbfb74 COL#fbfb74
+5H137E #fbfb74 COL#fbfb74
+6H138A #fbfb74 COL#fbfb74
+6H141A #fbfb74 COL#fbfb74
+6H145B #fbfb74 COL#fbfb74
+6H146B #fbfb74 COL#fbfb74
+6H147C #fbfb74 COL#fbfb74
+6H148C #fbfb74 COL#fbfb74
+6H149C #fbfb74 COL#fbfb74
+6H150C #fbfb74 COL#fbfb74
+6H151C #fbfb74 COL#fbfb74
+6H157D #fbfb74 COL#fbfb74
+6H159D #fbfb74 COL#fbfb74
+6H162E #fbfb74 COL#fbfb74
+7H163A #fbfb74 COL#fbfb74
+7H165A #fbfb74 COL#fbfb74
+7H167B #fbfb74 COL#fbfb74
+7H170B #fbfb74 COL#fbfb74
+7H172B #fbfb74 COL#fbfb74
+7H175B #fbfb74 COL#fbfb74
+7H188C #fbfb74 COL#fbfb74
+7H192C #fbfb74 COL#fbfb74
+7H193D #fbfb74 COL#fbfb74
+7H202E #fbfb74 COL#fbfb74
+7H203E #fbfb74 COL#fbfb74
+7H204E #fbfb74 COL#fbfb74
+M10C #75bbfb COL#75bbfb
+M11C #75bbfb COL#75bbfb
+M14C #75bbfb COL#75bbfb
+M15C #75bbfb COL#75bbfb
+M18C #75bbfb COL#75bbfb
+M1B #75bbfb COL#75bbfb
+M25A #75bbfb COL#75bbfb
+M28A #75bbfb COL#75bbfb
+M2B #75bbfb COL#75bbfb
+M33B #75bbfb COL#75bbfb
+M35B #75bbfb COL#75bbfb
+M38D #75bbfb COL#75bbfb
+M3C #75bbfb COL#75bbfb
+M43D #75bbfb COL#75bbfb
+M45D #75bbfb COL#75bbfb
+M46D #75bbfb COL#75bbfb
+M47D #75bbfb COL#75bbfb
+M4C #75bbfb COL#75bbfb
+M50E #75bbfb COL#75bbfb
+M52E #75bbfb COL#75bbfb
+M53E #75bbfb COL#75bbfb
+M54E #75bbfb COL#75bbfb
+M55E #75bbfb COL#75bbfb
+M5C #75bbfb COL#75bbfb
+M8C #75bbfb COL#75bbfb
+Z1B #a7ecbc COL#a7ecbc
+Z3C #a7ecbc COL#a7ecbc
+Z4D #a7ecbc COL#a7ecbc
+Z5E #a7ecbc COL#a7ecbc
+Z6E #a7ecbc COL#a7ecbc
+Z7E #a7ecbc COL#a7ecbc
+Z8E #a7ecbc COL#a7ecbc
