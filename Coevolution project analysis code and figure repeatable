@@ -1,0 +1,123 @@
+Project analysis code and data repeatable
+Project analysis code available
+# For SNP calling
+Software: bowtie2, bcftools
+Parameter:
+bowtie2 -p 12 -x /lp082_ref/lp --no-mixed --very-sensitive --n-ceil 0,0.01 -1 ISP_single_genome/hm/H1_1.fq -2 /ISP_single_genome/hm/H1_2.fq | samtools sort -O bam -@ 24 -o - > h1ref.bam
+bcftools mpileup -C 50 -Ou -m 3 -F 0.0002 -f /ISP_single_genome/lp082_ref/ref.fasta z1ref.bam > z1ref.bcf
+bcftools call -c --variants-only -Ob --ploidy 1 z1ref.bcf > z1.bcf
+bcftools view -Ov z1.bcf | vcfutils.pl varFilter -d 100 > z1.vcf
+# Merge all single *.vcf to the SNP profile:
+/ISP_single_genome/callsnp/tabix-0.2.6/bgzip H1.vcf
+bcftools index H1.vcf.gz
+bcftools merge --merge all -l listvcf -O v > snp.vcf
+
+#For isolate single genome assembling
+Software: Spades
+Parameter:
+spades.py -1 H1_1.fq -2 H1_2.fq -o spades_error_corrected_reads -t 24 -m 250 --only-error-correction
+spades.py -1 H1_1.00.0_0.cor.fastq.gz -2 H1_2.00.0_0.cor.fastq.gz -o spades_kmers_set_careful_assembly -t 24 -k 21,33,55,77,89 --careful --only-assembler
+
+#Strain mobile element annotation
+sed 's/k141/H1_node/g' /ISP_single_genome/assemble_genome/H1/final.contigs.fa > /ISP_single_genome/assemble_genome/assembled/H1.fasta
+cat *.fasta > whole_assembled.fasta
+blastall -a 12 -p blastn -i whole_assembled.fasta -d ./ref/ref.fasta -o b1 -W 11 -e 0.00001 -b 1 -m 8
+python extracnt_blast.py -i whole_assembled.fasta -b b1 -t 90 -o unreass.fasta
+cd-hit-est -i unreass.fasta -o cdhitass.fasta -c 0.9 -M 100000 -aS 0.9 -B 1
+awk -v min="500" 'BEGIN {RS = ">" ; ORS = ""} length($2) >= min {print ">"$0}' cdhitass.fasta  > unreass.fasta
+bowtie2-build unreass.fasta unress
+bowtie2 -p 24 -x ./unreass/unreass --no-mixed --very-sensitive -1 /ISP_single_genome/hm/H1_1.fq -2 /ISP_single_genome/hm/H1_2.fq -S h1ass.sam
+soap.coverage -cvg -sam -i h1ass.sam -refsingle ./unreass/unreass500.fasta -o h1ass.txt -depthsingle h1ass.coverage -plot hiassplot.txt 0 1000
+
+#For ANI calculation
+average_nucleotide_identity.py -i /ISP_single_genome/aug10/ani/ -o /ISP_single_genome/aug10/aniout -m ANIm -g
+
+#For phylogenic tree construction
+Software: MEGA-X, iTOL
+
+#Shotgun metagenomic sequencing data assembling
+Software: megahit
+Parameter:
+megahit -1 /ISP_metagenome/cleandata/MH1_1.fq -2 /ISP_metagenome/cleandata/MH1_2.fq -m 100000000000 -t 12 -o /ISP_metagenome/assemble/MH1 --min-contig-len 500
+
+#For intestinal microbiota evolution analysis
+Software: MDIS
+Parameter:
+run_midas.py snps /path/to/outdir --species_id Bacteroides_vulgatus_57955 -1 /path/to/reads_1.fq.gz -2 /path/to/reads_2.fq.gz
+
+#For metagenomic data taxonomy annotation
+Software: Bracken
+Parameter:
+kraken2-build --db ${KRAKEN_DB} --threads ${THREADS}
+bracken-build -d ${KRAKEN_DB} -t ${THREADS} -k ${KMER_LEN} -l ${READ_LEN}
+kraken2 --db ${KRAKEN_DB} --threads ${THREADS} --report ${SAMPLE}.kreport ${SAMPLE}.fq > ${SAMPLE}.kraken
+bracken -d ${KRAKEN_DB} -i ${SAMPLE}.kreport -o ${SAMPLE}.bracken -r ${READ_LEN} -l ${LEVEL} -t ${THRESHOLD}
+
+#For metagenomic data functional annotation
+Software: HUMAnN2
+Parameter:
+humann2 --threads 12 --input examples/demo.fasta --output $OUTPUT_DIR
+
+#For metagenomic data phage, antibiotic resistant genes and mobile elements annotation
+Software: Bowtie2, R
+Parameter:
+bowtie2 -p 24 -x /ISP_metagenome/mge/mge_ref/mge -D 20 -R 3 -N 1 -L 20 -i S,1,0.50 -1 /ISP_metagenome/cleandata/MH1_1.fq -2 /ISP_metagenome/cleandata/MH1_2.fq | samtools view -bS  | samtools sort -T PREFIX -@ 24 -o - > /ISP_metagenome/mge/MH1.outputPrefix.bam
+samtools index MH1.outputPrefix.bam
+samtools idxstats MH1.outputPrefix.bam | tee -a MH1.txt
+bowtie2 -p 24 -x /ISP_metagenome/card/card_ref/card -D 20 -R 3 -N 1 -L 20 -i S,1,0.50 -1 /ISP_metagenome/cleandata/MH1_1.fq -2 /ISP_metagenome/cleandata/MH1_2.fq | samtools view -bS  | samtools sort -T PREFIX -@ 24 -o - > /ISP_metagenome/card/MH1.outputPrefix.bam
+samtools index MH1.outputPrefix.bam
+samtools idxstats MH1.outputPrefix.bam | tee -a MH1.txt
+bowtie2 -p 12 -x /ISP_metagenome/phage/ref_phage/phage -1 /ISP_metagenome/cleandata/MH1_1.fq -2 /ISP_metagenome/cleandata/MH1_2.fq | samtools view -bS  | samtools sort -T PREFIX -@ 24 -o - > /ISP_metagenome/phage/MH1.outputPrefix.bam
+samtools index MH1.outputPrefix.bam
+samtools idxstats MH1.outputPrefix.bam | tee -a MH1.txt
+R
+rm(list=ls())
+files <- list.files(pattern = "txt$")
+name <- c('gene_name','gene_length')
+final_data <- read.table(files[1], header=F, sep="\t")[,1:2]
+for (filename in files)
+{
+  data <- read.table(filename, header=F, sep="\t")[,3]
+  name <- c(name,filename)
+  final_data <- cbind(final_data, data)
+}
+name <- gsub(".bowtie2.txt","",name)
+colnames(final_data) <- name
+write.table(file='card_bowtie2_unique',final_data, sep="\t", quote=F, row.names=F)
+
+Data and figures repeatable
+#Figure 1
+#(A) Experiment design of the present research.
+#(B) The phylogenetic tree was constructed based on the SNPs profile with the iTOL online version, the SNPs sequences were listed in “SNPS22_tree.fasta” on Github:https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_1B 
+#(C) Top panel;  The curve was drawn by R program, the original code and the raw data were deposited on https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_1C
+Bottom panel: The figure was constructed by GraphPad Prism 8, the original code and the raw data were deposited on https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_1C
+#(D) The genomic cycle figure with SNPs and GC abundance was constructed with R, the original code and the raw data were deposited on https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_1D
+
+#Figure 2
+#The FIG_2A and 2B were constructed based on Table S2 of “Sup_Tabs.xlsx” deposited in https://github.com/zhjch321123/Intestinal_Selective_Pressure_project. The genes were annotated with the PROKKA annotation pipeline (http://kbase.us/). 
+# The FIG_2C was drawn by R program, the original code and the raw data were deposited on https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_2C 
+
+#Figure 3
+#(A, C) The simplified phylogenetic tree was constructed based on SNP sequences with the iTOL online version.
+https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_3  
+#(B, D) The evolutionary dynamics figures were drawn by Python and R program with the code and dataset “FIG_3CD.txt” on https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_3  
+
+#Figure 4
+#(A) The distance boxplot was constructed by the R program, the original code and the raw data were deposited on Github:
+https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_4A 
+#(B) The 2 curves were constructed by the R program, the original code and the raw data were deposited on Github:
+https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_4B 
+#(C) The 2 network figures were constructed by Cytoscape 3.7.1 by Table S8 of “Sup_Tabs.xlsx”. The correlation strength was calculated by SpiecEasi using R program, the code and raw network file were deposited on Github: https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_4C 
+
+#Figure 5
+#(A) The distance boxplot was constructed by the R program, the original code and the raw data were deposited on Github:
+https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_5A
+#(B) The 2 figures were constructed by GraphPad Prism 8  with the dataset “META_SNP_pro_pla.pzfx” on Github: https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_5B
+#(C) The curves were drawn by R program, the code and raw network file were deposited on Github: https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Figure_5C  
+
+#Supplementary figures
+#Fig_S1 The 2 figures were constructed by R, the original code and the raw data were deposited on https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Supp_Figures 
+# Fig_S2 The SNPs heatmap was constructed with the “FIG_S2A.txt”  by R program, the code and raw network file were deposited on Github: https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Supp_Figures
+# Fig_S3 The phylogenetic tree was constructed based on SNP sequences with the iTOL online version. The raw data were deposited on Github: https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Supp_Figures
+# Fig_S4 The indigenous microbiome responded to the probiotic invasion. The figures was constructed based onTable S6-S7. The raw data were deposited on Github: https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Supp_Figures
+# Fig_S5 The number of SNPs of host intestinal microbiota responded to probiotic consumption in the present study and other published probiotic related study based on the data in “FIG_S5A.txt” and the correlation between the SNPs and the species alpha diversity was deposited in “FIG_S5B.txt”, The code and the raw data were deposited on Github: https://github.com/zhjch321123/Host-dependent-co-evolution-of-supplemented-probiotic/tree/master/Supp_Figures 
