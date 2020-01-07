@@ -1,0 +1,3 @@
+The relationships between the Lactobacillus plantarum HNU082 and its correlated indigenous intestinal microbes were visualized by the networks in the human and mouse model. 
+The nodes in different colors represented the Lactobacillus plantarum HNU082, the probiotic positively correlated species, the probiotic negatively correlated species, and the species indirectly correlated with the probiotic. 
+The gradual color of the line represented the strength of the correlation between the two nodes, which calculated by the SpiecEasi method based on the CLR transformed microbial relative abundance.
