@@ -1,0 +1,109 @@
+Sample_ID	Model	Time_point	Host_ID	Group	Alistipes finegoldii	Bacteroides ovatus	Bifidobacterium adolescentis	Bacteroides fragilis	Bacteroides salanitronis	Bacteroides thetaiotaomicron	Alistipes shahii	Bacteroides xylanisolvens	Bacteroides uniformis	Bifidobacterium longum	Paraprevotella xylaniphila	Bacteroides caccae	Odoribacter splanchnicus	Parabacteroides distasonis	Bacteroides intestinalis	Bacteroides vulgatus
+HA1	Human	Baseline	H01	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+HA2	Human	Baseline	H02	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+HA3	Human	Baseline	H03	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+HA4	Human	Baseline	H04	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+HA5	Human	Baseline	H05	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+HA6	Human	Baseline	H06	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+HA7	Human	Baseline	H07	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+HB1	Human	Day 03	H01	Probiotic	2 	91 	0 	0 	11 	2 	3 	0 	15 	7 	2 	0 	0 	0 	0 	0 
+HB2	Human	Day 03	H02	Probiotic	0 	3 	479 	0 	18 	6 	0 	14 	0 	51 	4 	0 	0 	0 	0 	0 
+HB3	Human	Day 03	H03	Probiotic	5 	3 	0 	2 	12 	4 	8 	6 	5 	0 	1 	0 	0 	0 	0 	0 
+HB4	Human	Day 03	H04	Probiotic	2 	156 	1 	26 	0 	0 	9 	20 	1 	3 	0 	15 	0 	1 	2 	0 
+HB5	Human	Day 03	H05	Probiotic	0 	7 	0 	56 	34 	39 	12 	2 	35 	0 	46 	0 	8 	0 	0 	0 
+HB6	Human	Day 03	H06	Probiotic	18 	164 	1 	42 	48 	51 	64 	23 	18 	0 	0 	13 	5 	6 	22 	0 
+HB7	Human	Day 03	H07	Probiotic	1 	81 	0 	38 	15 	40 	7 	47 	3 	0 	1 	0 	2 	2 	3 	0 
+HC1	Human	Day 07	H01	Probiotic	0 	7 	4 	0 	11 	0 	0 	0 	11 	19 	2 	0 	0 	0 	0 	0 
+HC2	Human	Day 07	H02	Probiotic	0 	0 	480 	0 	0 	0 	0 	6 	0 	65 	0 	0 	0 	0 	0 	0 
+HC3	Human	Day 07	H03	Probiotic	5 	3 	0 	4 	16 	4 	15 	3 	3 	0 	1 	2 	0 	7 	2 	0 
+HC4	Human	Day 07	H04	Probiotic	2 	59 	0 	16 	0 	0 	7 	37 	1 	0 	0 	7 	0 	1 	2 	0 
+HC5	Human	Day 07	H05	Probiotic	0 	20 	0 	94 	87 	46 	13 	3 	46 	0 	46 	0 	9 	0 	0 	0 
+HC6	Human	Day 07	H06	Probiotic	31 	226 	141 	111 	60 	72 	82 	68 	29 	16 	0 	23 	9 	1 	24 	0 
+HC7	Human	Day 07	H07	Probiotic	0 	63 	0 	20 	19 	19 	6 	39 	4 	0 	1 	0 	2 	2 	3 	0 
+HD1	Human	Day 14	H01	Probiotic	1 	273 	0 	0 	7 	1 	2 	0 	10 	1 	2 	0 	0 	0 	0 	0 
+HD2	Human	Day 14	H02	Probiotic	0 	3 	479 	0 	18 	6 	0 	14 	0 	53 	4 	0 	0 	0 	0 	0 
+HD3	Human	Day 14	H03	Probiotic	4 	3 	4 	11 	20 	10 	13 	2 	3 	0 	1 	1 	2 	7 	0 	0 
+HD4	Human	Day 14	H04	Probiotic	1 	374 	0 	36 	0 	6 	16 	18 	3 	0 	0 	15 	1 	3 	6 	0 
+HD5	Human	Day 14	H05	Probiotic	0 	9 	0 	59 	62 	40 	13 	3 	31 	0 	45 	0 	9 	0 	0 	0 
+HD6	Human	Day 14	H06	Probiotic	29 	171 	0 	53 	57 	61 	74 	27 	24 	0 	0 	22 	5 	7 	11 	0 
+HD7	Human	Day 14	H07	Probiotic	0 	81 	0 	38 	21 	34 	7 	41 	3 	0 	1 	0 	2 	2 	1 	0 
+HE1	Human	Day 21	H01	Probiotic	0 	290 	0 	0 	11 	2 	4 	4 	10 	1 	2 	0 	0 	7 	0 	0 
+HE2	Human	Day 21	H02	Probiotic	0 	0 	480 	0 	14 	0 	0 	12 	0 	65 	0 	0 	0 	0 	0 	0 
+HE3	Human	Day 21	H03	Probiotic	1 	6 	0 	5 	23 	8 	2 	0 	8 	0 	2 	0 	2 	7 	0 	0 
+HE4	Human	Day 21	H04	Probiotic	2 	427 	0 	40 	0 	2 	6 	28 	3 	0 	0 	14 	0 	5 	4 	0 
+HE5	Human	Day 21	H05	Probiotic	13 	11 	0 	58 	50 	49 	17 	1 	32 	0 	46 	9 	8 	3 	2 	0 
+HE6	Human	Day 21	H06	Probiotic	27 	201 	0 	57 	60 	65 	80 	24 	28 	0 	0 	23 	6 	8 	20 	0 
+HE7	Human	Day 21	H07	Probiotic	0 	68 	0 	19 	24 	18 	6 	21 	4 	0 	1 	0 	0 	2 	3 	0 
+HF1	Human	Day 28	H01	Probiotic	0 	280 	0 	0 	2 	1 	3 	2 	10 	1 	2 	0 	0 	2 	0 	0 
+HF2	Human	Day 28	H02	Probiotic	0 	3 	480 	0 	9 	6 	0 	8 	0 	65 	5 	0 	0 	0 	0 	0 
+HF3	Human	Day 28	H03	Probiotic	5 	3 	0 	13 	21 	10 	12 	2 	6 	0 	0 	6 	2 	7 	2 	0 
+HF4	Human	Day 28	H04	Probiotic	2 	69 	0 	10 	0 	0 	7 	16 	1 	0 	0 	7 	0 	1 	0 	0 
+HF5	Human	Day 28	H05	Probiotic	0 	22 	0 	120 	98 	50 	15 	5 	46 	2 	44 	0 	5 	1 	0 	0 
+HF6	Human	Day 28	H06	Probiotic	29 	230 	69 	81 	60 	67 	81 	27 	28 	0 	0 	23 	6 	1 	21 	0 
+HF7	Human	Day 28	H07	Probiotic	0 	81 	0 	38 	25 	10 	1 	39 	3 	0 	1 	0 	1 	2 	3 	0 
+MA1	Mouse	Baseline	M01	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+MA2	Mouse	Baseline	M02	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+MA3	Mouse	Baseline	M03	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+MA4	Mouse	Baseline	M04	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+MA5	Mouse	Baseline	M05	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+MA6	Mouse	Baseline	M06	Probiotic	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+MB1	Mouse	Day 03	M01	Probiotic	0	33 	0	9 	4 	50 	0	2 	1 	0	0	0 	0	0	0	29 
+MB2	Mouse	Day 03	M02	Probiotic	0	6 	0	7 	20 	113 	0	4 	0 	0	0	0 	0	0	0	30 
+MB3	Mouse	Day 03	M03	Probiotic	0	29 	0	11 	7 	142 	0	4 	13 	0	0	1 	0	0	0	39 
+MB4	Mouse	Day 03	M04	Probiotic	0	7 	0	13 	8 	224 	0	4 	11 	0	0	1 	0	0	0	14 
+MB5	Mouse	Day 03	M05	Probiotic	0	16 	0	9 	4 	101 	0	3 	7 	0	0	0 	0	0	0	10 
+MB6	Mouse	Day 03	M06	Probiotic	0	8 	0	11 	13 	72 	0	5 	1 	0	0	0 	0	0	0	26 
+MC1	Mouse	Day 07	M01	Probiotic	0	16 	0	4 	5 	39 	0	1 	1 	0	0	0 	0	0	0	16 
+MC2	Mouse	Day 07	M02	Probiotic	0	0 	0	0 	14 	14 	0	0 	0 	0	0	0 	0	0	0	8 
+MC3	Mouse	Day 07	M03	Probiotic	0	336 	0	10 	10 	258 	0	1080 	13 	0	0	81 	0	0	0	14 
+MC4	Mouse	Day 07	M04	Probiotic	0	356 	0	13 	13 	336 	0	1092 	10 	0	0	82 	0	0	0	24 
+MC5	Mouse	Day 07	M05	Probiotic	0	22 	0	9 	4 	73 	0	4 	2 	0	0	0 	0	0	0	34 
+MC6	Mouse	Day 07	M06	Probiotic	0	20 	0	11 	4 	46 	0	3 	1 	0	0	0 	0	0	0	26 
+MD1	Mouse	Day 14	M01	Probiotic	0	5 	0	6 	10 	50 	0	2 	0 	0	0	0 	0	0	0	13 
+MD2	Mouse	Day 14	M02	Probiotic	0	4 	0	10 	18 	112 	0	4 	3 	0	0	0 	0	0	0	27 
+MD3	Mouse	Day 14	M03	Probiotic	0	355 	0	14 	4 	295 	0	1089 	13 	0	0	82 	0	0	0	890 
+MD4	Mouse	Day 14	M04	Probiotic	0	348 	0	11 	15 	405 	0	1078 	10 	0	0	82 	0	0	0	216 
+MD5	Mouse	Day 14	M05	Probiotic	0	268 	0	13 	20 	195 	0	442 	0 	0	0	36 	0	0	0	34 
+MD6	Mouse	Day 14	M06	Probiotic	0	329 	0	12 	18 	224 	0	958 	1 	0	0	74 	0	0	0	274 
+ME1	Mouse	Day 21	M01	Probiotic	0	34 	0	10 	2 	141 	0	3 	12 	0	0	0 	0	0	0	33 
+ME2	Mouse	Day 21	M02	Probiotic	0	0 	0	7 	17 	75 	0	2 	0 	0	0	0 	0	0	0	9 
+ME3	Mouse	Day 21	M03	Probiotic	0	284 	0	7 	7 	249 	0	704 	13 	0	0	56 	0	0	0	34 
+ME4	Mouse	Day 21	M04	Probiotic	0	229 	0	17 	12 	344 	0	537 	11 	0	0	48 	0	0	0	477 
+ME5	Mouse	Day 21	M05	Probiotic	0	109 	0	13 	20 	137 	0	9 	0 	0	0	35 	0	0	0	134 
+ME6	Mouse	Day 21	M06	Probiotic	0	104 	0	14 	20 	149 	0	4 	1 	0	0	31 	0	0	0	79 
+MF1	Mouse	Day 28	M01	Probiotic	0	4 	0	13 	8 	77 	0	7 	0 	0	0	33 	0	0	0	39 
+MF2	Mouse	Day 28	M02	Probiotic	0	0 	0	7 	3 	225 	0	9 	15 	0	0	33 	0	0	0	24 
+MF3	Mouse	Day 28	M03	Probiotic	0	23 	0	16 	13 	154 	0	6 	12 	0	0	36 	0	0	0	651 
+MF4	Mouse	Day 28	M04	Probiotic	0	106 	0	18 	10 	224 	0	31 	9 	0	0	37 	0	0	0	933 
+MF5	Mouse	Day 28	M05	Probiotic	0	74 	0	14 	21 	101 	0	8 	3 	0	0	35 	0	0	0	868 
+MF6	Mouse	Day 28	M06	Probiotic	0	48 	0	12 	15 	107 	0	4 	0 	0	0	36 	0	0	0	916 
+VA1	Human	Baseline	H08	Placebo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+VA2	Human	Baseline	H09	Placebo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+VA3	Human	Baseline	H10	Placebo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+VA4	Human	Baseline	H11	Placebo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+VA5	Human	Baseline	H12	Placebo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+VD1	Human	Day 14	H08	Placebo	5 	0	5 	3 	1 	1 	0	9 	3 	4 	0	0	0	0	2 	0
+VD2	Human	Day 14	H09	Placebo	5 	0	4 	2 	4 	4 	0	8 	0 	4 	0	0	0	0	0 	0
+VD3	Human	Day 14	H10	Placebo	0 	0	1 	3 	1 	2 	0	0 	0 	0 	0	0	0	0	0 	0
+VD4	Human	Day 14	H11	Placebo	0 	0	0 	0 	0 	1 	0	0 	0 	3 	0	0	0	0	0 	0
+VD5	Human	Day 14	H12	Placebo	4 	0	4 	4 	4 	7 	0	4 	4 	0 	0	0	0	0	2 	0
+VF1	Human	Day 28	H08	Placebo	5 	0	3 	5 	0 	3 	0	6 	3 	4 	0	0	0	0	2 	13 
+VF2	Human	Day 28	H09	Placebo	3 	0	2 	4 	2 	5 	0	11 	2 	4 	0	0	0	0	1 	39 
+VF3	Human	Day 28	H10	Placebo	5 	0	2 	5 	2 	2 	0	7 	2 	0 	0	0	0	0	2 	13 
+VF4	Human	Day 28	H11	Placebo	6 	0	3 	3 	2 	7 	0	9 	2 	1 	0	0	0	0	2 	43 
+VF5	Human	Day 28	H12	Placebo	0 	0	2 	9 	4 	6 	0	9 	4 	0 	0	0	0	0	0 	46 
+YA1	Mouse	Baseline	M07	Placebo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+YA2	Mouse	Baseline	M08	Placebo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+YA3	Mouse	Baseline	M09	Placebo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+YA4	Mouse	Baseline	M10	Placebo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+YA5	Mouse	Baseline	M11	Placebo	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+YD1	Mouse	Day 14	M07	Placebo	0	0	0	0	0	18 	0	0	0	0	0	0	0	0	0	7 
+YD2	Mouse	Day 14	M08	Placebo	0	0	0	0	0	13 	0	0	0	0	0	0	0	0	0	4 
+YD3	Mouse	Day 14	M09	Placebo	0	0	0	0	0	14 	0	0	0	0	0	0	0	0	0	8 
+YD4	Mouse	Day 14	M10	Placebo	0	0	0	0	0	18 	0	0	0	0	0	0	0	0	0	4 
+YD5	Mouse	Day 14	M11	Placebo	0	0	0	0	0	19 	0	0	0	0	0	0	0	0	0	7 
+YF1	Mouse	Day 28	M07	Placebo	0	0	0	0	0	22 	0	0	0	0	0	0	0	0	0	3 
+YF2	Mouse	Day 28	M08	Placebo	0	0	0	0	0	17 	0	0	0	0	0	0	0	0	0	3 
+YF3	Mouse	Day 28	M09	Placebo	0	0	0	0	0	11 	0	0	0	0	0	0	0	0	0	6 
+YF4	Mouse	Day 28	M10	Placebo	0	0	0	0	0	26 	0	0	0	0	0	0	0	0	0	8 
+YF5	Mouse	Day 28	M11	Placebo	0	0	0	0	0	24 	0	0	0	0	0	0	0	0	0	5 
