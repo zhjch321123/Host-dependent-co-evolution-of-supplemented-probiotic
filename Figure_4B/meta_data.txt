@@ -1,0 +1,109 @@
+Sample_ID	Model	Time_point	Host_ID	Group	Sequencing
+HA1	Human	Baseline	H01	Probiotic	Metagenomic Sequencing
+HA2	Human	Baseline	H02	Probiotic	Metagenomic Sequencing
+HA3	Human	Baseline	H03	Probiotic	Metagenomic Sequencing
+HA4	Human	Baseline	H04	Probiotic	Metagenomic Sequencing
+HA5	Human	Baseline	H05	Probiotic	Metagenomic Sequencing
+HA6	Human	Baseline	H06	Probiotic	Metagenomic Sequencing
+HA7	Human	Baseline	H07	Probiotic	Metagenomic Sequencing
+HB1	Human	Day 3	H01	Probiotic	Metagenomic Sequencing
+HB2	Human	Day 3	H02	Probiotic	Metagenomic Sequencing
+HB3	Human	Day 3	H03	Probiotic	Metagenomic Sequencing
+HB4	Human	Day 3	H04	Probiotic	Metagenomic Sequencing
+HB5	Human	Day 3	H05	Probiotic	Metagenomic Sequencing
+HB6	Human	Day 3	H06	Probiotic	Metagenomic Sequencing
+HB7	Human	Day 3	H07	Probiotic	Metagenomic Sequencing
+HC1	Human	Day 7	H01	Probiotic	Metagenomic Sequencing
+HC2	Human	Day 7	H02	Probiotic	Metagenomic Sequencing
+HC3	Human	Day 7	H03	Probiotic	Metagenomic Sequencing
+HC4	Human	Day 7	H04	Probiotic	Metagenomic Sequencing
+HC5	Human	Day 7	H05	Probiotic	Metagenomic Sequencing
+HC6	Human	Day 7	H06	Probiotic	Metagenomic Sequencing
+HC7	Human	Day 7	H07	Probiotic	Metagenomic Sequencing
+HD1	Human	Day 14	H01	Probiotic	Metagenomic Sequencing
+HD2	Human	Day 14	H02	Probiotic	Metagenomic Sequencing
+HD3	Human	Day 14	H03	Probiotic	Metagenomic Sequencing
+HD4	Human	Day 14	H04	Probiotic	Metagenomic Sequencing
+HD5	Human	Day 14	H05	Probiotic	Metagenomic Sequencing
+HD6	Human	Day 14	H06	Probiotic	Metagenomic Sequencing
+HD7	Human	Day 14	H07	Probiotic	Metagenomic Sequencing
+HE1	Human	Day 21	H01	Probiotic	Metagenomic Sequencing
+HE2	Human	Day 21	H02	Probiotic	Metagenomic Sequencing
+HE3	Human	Day 21	H03	Probiotic	Metagenomic Sequencing
+HE4	Human	Day 21	H04	Probiotic	Metagenomic Sequencing
+HE5	Human	Day 21	H05	Probiotic	Metagenomic Sequencing
+HE6	Human	Day 21	H06	Probiotic	Metagenomic Sequencing
+HE7	Human	Day 21	H07	Probiotic	Metagenomic Sequencing
+HF1	Human	Day 28	H01	Probiotic	Metagenomic Sequencing
+HF2	Human	Day 28	H02	Probiotic	Metagenomic Sequencing
+HF3	Human	Day 28	H03	Probiotic	Metagenomic Sequencing
+HF4	Human	Day 28	H04	Probiotic	Metagenomic Sequencing
+HF5	Human	Day 28	H05	Probiotic	Metagenomic Sequencing
+HF6	Human	Day 28	H06	Probiotic	Metagenomic Sequencing
+HF7	Human	Day 28	H07	Probiotic	Metagenomic Sequencing
+VA1	Human	Baseline	H08	Placebo	Metagenomic Sequencing
+VA2	Human	Baseline	H09	Placebo	Metagenomic Sequencing
+VA3	Human	Baseline	H10	Placebo	Metagenomic Sequencing
+VA4	Human	Baseline	H11	Placebo	Metagenomic Sequencing
+VA5	Human	Baseline	H12	Placebo	Metagenomic Sequencing
+VD1	Human	Day 14	H08	Placebo	Metagenomic Sequencing
+VD2	Human	Day 14	H09	Placebo	Metagenomic Sequencing
+VD3	Human	Day 14	H10	Placebo	Metagenomic Sequencing
+VD4	Human	Day 14	H11	Placebo	Metagenomic Sequencing
+VD5	Human	Day 14	H12	Placebo	Metagenomic Sequencing
+VF1	Human	Day 28	H08	Placebo	Metagenomic Sequencing
+VF2	Human	Day 28	H09	Placebo	Metagenomic Sequencing
+VF3	Human	Day 28	H10	Placebo	Metagenomic Sequencing
+VF4	Human	Day 28	H11	Placebo	Metagenomic Sequencing
+VF5	Human	Day 28	H12	Placebo	Metagenomic Sequencing
+MA1	Mouse	Baseline	M01	Probiotic	Metagenomic Sequencing
+MA2	Mouse	Baseline	M02	Probiotic	Metagenomic Sequencing
+MA3	Mouse	Baseline	M03	Probiotic	Metagenomic Sequencing
+MA4	Mouse	Baseline	M04	Probiotic	Metagenomic Sequencing
+MA5	Mouse	Baseline	M05	Probiotic	Metagenomic Sequencing
+MA6	Mouse	Baseline	M06	Probiotic	Metagenomic Sequencing
+MB1	Mouse	Day 3	M01	Probiotic	Metagenomic Sequencing
+MB2	Mouse	Day 3	M02	Probiotic	Metagenomic Sequencing
+MB3	Mouse	Day 3	M03	Probiotic	Metagenomic Sequencing
+MB4	Mouse	Day 3	M04	Probiotic	Metagenomic Sequencing
+MB5	Mouse	Day 3	M05	Probiotic	Metagenomic Sequencing
+MB6	Mouse	Day 3	M06	Probiotic	Metagenomic Sequencing
+MC1	Mouse	Day 7	M01	Probiotic	Metagenomic Sequencing
+MC2	Mouse	Day 7	M02	Probiotic	Metagenomic Sequencing
+MC3	Mouse	Day 7	M03	Probiotic	Metagenomic Sequencing
+MC4	Mouse	Day 7	M04	Probiotic	Metagenomic Sequencing
+MC5	Mouse	Day 7	M05	Probiotic	Metagenomic Sequencing
+MC6	Mouse	Day 7	M06	Probiotic	Metagenomic Sequencing
+MD1	Mouse	Day 14	M01	Probiotic	Metagenomic Sequencing
+MD2	Mouse	Day 14	M02	Probiotic	Metagenomic Sequencing
+MD3	Mouse	Day 14	M03	Probiotic	Metagenomic Sequencing
+MD4	Mouse	Day 14	M04	Probiotic	Metagenomic Sequencing
+MD5	Mouse	Day 14	M05	Probiotic	Metagenomic Sequencing
+MD6	Mouse	Day 14	M06	Probiotic	Metagenomic Sequencing
+ME1	Mouse	Day 21	M01	Probiotic	Metagenomic Sequencing
+ME2	Mouse	Day 21	M02	Probiotic	Metagenomic Sequencing
+ME3	Mouse	Day 21	M03	Probiotic	Metagenomic Sequencing
+ME4	Mouse	Day 21	M04	Probiotic	Metagenomic Sequencing
+ME5	Mouse	Day 21	M05	Probiotic	Metagenomic Sequencing
+ME6	Mouse	Day 21	M06	Probiotic	Metagenomic Sequencing
+MF1	Mouse	Day 28	M01	Probiotic	Metagenomic Sequencing
+MF2	Mouse	Day 28	M02	Probiotic	Metagenomic Sequencing
+MF3	Mouse	Day 28	M03	Probiotic	Metagenomic Sequencing
+MF4	Mouse	Day 28	M04	Probiotic	Metagenomic Sequencing
+MF5	Mouse	Day 28	M05	Probiotic	Metagenomic Sequencing
+MF6	Mouse	Day 28	M06	Probiotic	Metagenomic Sequencing
+YA1	Mouse	Baseline	M07	Placebo	Metagenomic Sequencing
+YA2	Mouse	Baseline	M08	Placebo	Metagenomic Sequencing
+YA3	Mouse	Baseline	M09	Placebo	Metagenomic Sequencing
+YA4	Mouse	Baseline	M10	Placebo	Metagenomic Sequencing
+YA5	Mouse	Baseline	M11	Placebo	Metagenomic Sequencing
+YD1	Mouse	Day 14	M07	Placebo	Metagenomic Sequencing
+YD2	Mouse	Day 14	M08	Placebo	Metagenomic Sequencing
+YD3	Mouse	Day 14	M09	Placebo	Metagenomic Sequencing
+YD4	Mouse	Day 14	M10	Placebo	Metagenomic Sequencing
+YD5	Mouse	Day 14	M11	Placebo	Metagenomic Sequencing
+YF1	Mouse	Day 28	M07	Placebo	Metagenomic Sequencing
+YF2	Mouse	Day 28	M08	Placebo	Metagenomic Sequencing
+YF3	Mouse	Day 28	M09	Placebo	Metagenomic Sequencing
+YF4	Mouse	Day 28	M10	Placebo	Metagenomic Sequencing
+YF5	Mouse	Day 28	M11	Placebo	Metagenomic Sequencing
