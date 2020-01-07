@@ -1,0 +1,5 @@
+library(pheatmap)
+all<-read.table("table_s6;table_s9;table_s10",header=TRUE,sep="\t",row.names=1)
+colgroup=read.table("colgroup.txt",header=TRUE,sep="\t",row.names=1)
+colnames(colgroup)=c("Time")
+pheatmap(all,annotation_col = colgroup,cellwidth=6,cluster_col = FALSE,cellheight=6,fontsize_row=6,fontsize_col=6, gaps_col = c(42, 78), cutree_row=2, color = colorRampPalette(c("black", "white", "darkorchid4"))(50), filename="phage777.pdf")
