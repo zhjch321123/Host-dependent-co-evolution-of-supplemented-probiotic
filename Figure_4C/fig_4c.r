@@ -1,7 +1,0 @@
-library(SpiecEasi)
-hm <- read.table("gOTU.txt",header=T,row.names=1,sep="\t")
-hh <- data.matrix(hm)
-se.hm <- spiec.easi(hh, method='glasso', nlambda=40, lambda.min.ratio=1e-2, pulsar.params = list(thresh = 0.05))
-tt <- symBeta(getOptiCov(se.hm))
-t1=as.matrix(tt)
-write.table(t1,"SpiecEasi.txt",sep="\t")
