@@ -1,5 +1,5 @@
 # Title: The adaptive co-evolution of ingested probiotics and resident gut microbiota in mice, humans and zebrafish
-# Shi Huang #, Shuaiming Jiang#, Dongxue Huo#, Celeste Allaband, Mehrbod Estaki, Victor Cantu, Pedro Belda-Ferre, Yoshiki Vázquez-Baeza, Qiyun Zhu, Chenchen Ma, Wu Li,  Amir Zarrinpar, Congfa Li, Rob Knight*, Jiachao Zhang*
+Shi Huang #, Shuaiming Jiang#, Dongxue Huo#, Celeste Allaband, Mehrbod Estaki, Victor Cantu, Pedro Belda-Ferre, Yoshiki Vázquez-Baeza, Qiyun Zhu, Chenchen Ma, Wu Li,  Amir Zarrinpar, Congfa Li, Rob Knight*, Jiachao Zhang*
 
 This repository includes all data used in the analyses of this manuscript to reproduce all the figures or results.
 
